@@ -764,7 +764,7 @@ function AdminBlog() {
             published_at: new Date().toISOString().split("T")[0],
             read_time: `${Math.ceil(form.content.split(" ").length / 200)} min read`
         };
-        console.log("Sending:", newPost); // SEE DATA
+        console.log("Sending:", newPost);
         const res = await fetch("http://localhost/photography-portfolio-backend/add-post.php", {
             method: "POST",
             headers: {
@@ -773,7 +773,7 @@ function AdminBlog() {
             body: JSON.stringify(newPost)
         });
         const result = await res.json();
-        console.log("PHP Response:", result); // SEE SUCCESS
+        console.log("PHP Response:", result);
         if (result.success) {
             setIsAddDialogOpen(false);
             setForm({

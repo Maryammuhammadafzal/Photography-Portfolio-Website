@@ -90,7 +90,7 @@ const handleAdd = async () => {
     read_time: `${Math.ceil(form.content.split(" ").length / 200)} min read`,
   };
 
-  console.log("Sending:", newPost); // SEE DATA
+  console.log("Sending:", newPost);
 
   const res = await fetch("http://localhost/photography-portfolio-backend/add-post.php", {
     method: "POST",
@@ -99,7 +99,7 @@ const handleAdd = async () => {
   });
 
   const result = await res.json();
-  console.log("PHP Response:", result); // SEE SUCCESS
+  console.log("PHP Response:", result);
 
   if (result.success) {
     setIsAddDialogOpen(false);

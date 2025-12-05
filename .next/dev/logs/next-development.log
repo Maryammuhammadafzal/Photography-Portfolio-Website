@@ -5039,3 +5039,465 @@ It can also happen if the client has a browser extension installed which messes 
 [64:22:12.556] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
 [64:22:29.534] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Technology","content":"Ipsam sunt eiusmod d","excerpt":"Facilis velit aliqu","featured_image":"Officia tempore eve","published_at":"2025-12-05","read_time":"1 min read","slug":"In error molestias q","title":"Dolor fugiat volupt"}
 [64:22:29.534] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[64:31:11.662] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Technology","content":"Ipsam sunt eiusmod d","excerpt":"Facilis velit aliqu","featured_image":"Officia tempore eve","published_at":"2025-12-05","read_time":"1 min read","slug":"In error molestias q","title":"Dolor fugiat volupt"}
+[64:31:11.662] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[64:31:15.608] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[64:31:15.821] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[64:31:15.821] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[64:31:15.821] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764935046059}
+[64:31:17.839] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[64:31:17.839] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[64:31:26.586] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Technology","content":"Cumque nihil natus m","excerpt":"Et aut eos sint omn","featured_image":"Pariatur Totam laud","published_at":"2025-12-05","read_time":"1 min read","slug":"Doloremque debitis t","title":"Iste exercitationem "}
+[64:31:26.586] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[64:32:40.610] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[64:32:40.610] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[64:32:42.506] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Technology","content":"Cumque nihil natus m","excerpt":"Et aut eos sint omn","featured_image":"Pariatur Totam laud","published_at":"2025-12-05","read_time":"1 min read","slug":"Doloremque debitis t","title":"Iste exercitationem "}
+[64:32:42.506] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[64:33:50.955] Server  LOG      ✓ Compiled in 149ms
+[64:33:54.209] Server  LOG      ✓ Compiled in 102ms
+[64:34:14.401] Server  LOG      ✓ Compiled in 126ms
+[64:34:16.785] Server  LOG      ✓ Compiled in 86ms
+[64:34:20.383] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Technology","content":"Cumque nihil natus m","excerpt":"Et aut eos sint omn","featured_image":"Pariatur Totam laud","published_at":"2025-12-05","read_time":"1 min read","slug":"Doloremque debitis t","title":"Iste exercitationem "}
+[64:34:20.383] Browser LOG     {}
+[64:34:20.383] Browser LOG     PHP Response: {"message":"Invalid data: 'post_title' and 'post_excerpt' are required","status":"error"}
+[64:34:20.383] Browser ERROR   Add failed: undefined
+[64:43:22.485] Server  LOG      ✓ Compiled in 106ms
+[66:58:38.461] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[66:58:38.913] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[66:58:38.913] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[66:58:38.913] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764943889154}
+[66:58:41.462] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[66:58:41.462] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[66:58:54.944] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Videography","content":"Quia optio cupidata","excerpt":"Libero incidunt ass","featured_image":"Commodo dolor aperia","published_at":"2025-12-05","read_time":"1 min read","slug":"Magna cupidatat sit","title":"Reprehenderit conseq"}
+[66:58:54.944] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[67:04:10.082] Server  LOG      ✓ Compiled in 163ms
+[67:04:10.940] Browser ERROR   ./app/admin/blog/page.tsx:96:1
+Parsing ecmascript source code failed
+  94 |
+  95 |   const res = await fetch("http://localhost/photography-portfolio-backend/add-post.php
+> 96 | ", {
+     | ^^^^
+  97 |     method: "POST",
+  98 |     headers: { "Content-Type": "application/json" },
+  99 |     body: JSON.stringify(newPost),
+
+Unterminated string constant
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:04:26.588] Server  LOG      ✓ Compiled in 110ms
+[67:04:29.318] Server  LOG      ✓ Compiled in 89ms
+[67:05:25.603] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Videography","content":"Quia optio cupidata","excerpt":"Libero incidunt ass","featured_image":"Commodo dolor aperia","published_at":"2025-12-05","read_time":"1 min read","slug":"Magna cupidatat sit","title":"Reprehenderit conseq"}
+[67:05:25.603] Browser LOG     PHP Response: {"message":"Invalid data: 'post_title' and 'post_excerpt' are required","status":"error"}
+[67:05:25.603] Browser ERROR   Add failed: undefined
+[67:07:47.007] Server  LOG      ✓ Compiled in 178ms
+[67:07:51.003] Server  LOG      ✓ Compiled in 167ms
+[67:07:54.302] Server  LOG      ✓ Compiled in 97ms
+[67:07:57.574] Server  LOG      ✓ Compiled in 105ms
+[67:15:47.228] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Videography","content":"Quia optio cupidata","featured_image":"Commodo dolor aperia","post_excerpt":"Libero incidunt ass","post_title":"Reprehenderit conseq","published_at":"2025-12-05","read_time":"1 min read","slug":"Magna cupidatat sit"}
+[67:16:13.285] Server  LOG      ✓ Compiled in 105ms
+[67:16:19.745] Server  LOG      ✓ Compiled in 97ms
+[67:16:44.060] Server  LOG      ✓ Compiled in 119ms
+[67:17:10.465] Server  LOG      ✓ Compiled in 159ms
+[67:18:39.302] Browser LOG     Sending: {"author_image":"/placeholder.svg","category":"Videography","featured_image":"Commodo dolor aperia","post_author":"Admin","post_content":"Quia optio cupidata","post_excerpt":"Libero incidunt ass","post_title":"Reprehenderit conseq","published_at":"2025-12-05","read_time":"1 min read","slug":"Magna cupidatat sit"}
+[67:21:17.568] Server  LOG      ✓ Compiled in 198ms
+[67:21:17.941] Browser ERROR   ./app/admin/blog/page.tsx:87:5
+Parsing ecmascript source code failed
+  85 |     featured_image: form.featured_image,
+  86 |     post
+> 87 |     category: form.category,
+     |     ^^^^^^^^
+  88 |     post_author: "Admin",
+  89 |     author_image: "/placeholder.svg",
+  90 |     published_at: new Date().toISOString().split("T")[0],
+
+Unexpected token `category`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:21:20.938] Browser ERROR   ./app/admin/blog/page.tsx:87:5
+Parsing ecmascript source code failed
+  85 |     featured_image: form.featured_image,
+  86 |     post_type
+> 87 |     category: form.category,
+     |     ^^^^^^^^
+  88 |     post_author: "Admin",
+  89 |     author_image: "/placeholder.svg",
+  90 |     published_at: new Date().toISOString().split("T")[0],
+
+Unexpected token `category`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:21:21.259] Server  LOG      ✓ Compiled in 100ms
+[67:21:21.942] Browser ERROR   ./app/admin/blog/page.tsx:87:13
+Parsing ecmascript source code failed
+  85 |     featured_image: form.featured_image,
+  86 |     post_type: 
+> 87 |     category: form.category,
+     |             ^
+  88 |     post_author: "Admin",
+  89 |     author_image: "/placeholder.svg",
+  90 |     published_at: new Date().toISOString().split("T")[0],
+
+Expected ',', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:21:23.745] Server  LOG      ✓ Compiled in 114ms
+[67:21:23.933] Browser ERROR   ./app/admin/blog/page.tsx:87:5
+Parsing ecmascript source code failed
+  85 |     featured_image: form.featured_image,
+  86 |     post_type: 'Post'
+> 87 |     category: form.category,
+     |     ^^^^^^^^
+  88 |     post_author: "Admin",
+  89 |     author_image: "/placeholder.svg",
+  90 |     published_at: new Date().toISOString().split("T")[0],
+
+Expected ',', got 'category'
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:21:44.346] Server  LOG      ✓ Compiled in 156ms
+[67:21:44.939] Browser ERROR   ./app/admin/blog/page.tsx:88:5
+Parsing ecmascript source code failed
+  86 |     post_type: 'Post',
+  87 |     featured
+> 88 |     category: form.category,
+     |     ^^^^^^^^
+  89 |     post_author: "Admin",
+  90 |     author_image: "/placeholder.svg",
+  91 |     published_at: new Date().toISOString().split("T")[0],
+
+Unexpected token `category`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:21:45.681] Server  LOG      ✓ Compiled in 125ms
+[67:21:45.940] Browser ERROR   ./app/admin/blog/page.tsx:88:13
+Parsing ecmascript source code failed
+  86 |     post_type: 'Post',
+  87 |     featured: 
+> 88 |     category: form.category,
+     |             ^
+  89 |     post_author: "Admin",
+  90 |     author_image: "/placeholder.svg",
+  91 |     published_at: new Date().toISOString().split("T")[0],
+
+Expected ',', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:21:46.720] Server  LOG      ✓ Compiled in 95ms
+[67:21:46.940] Browser ERROR   ./app/admin/blog/page.tsx:88:5
+Parsing ecmascript source code failed
+  86 |     post_type: 'Post',
+  87 |     featured: ''
+> 88 |     category: form.category,
+     |     ^^^^^^^^
+  89 |     post_author: "Admin",
+  90 |     author_image: "/placeholder.svg",
+  91 |     published_at: new Date().toISOString().split("T")[0],
+
+Expected ',', got 'category'
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:21:48.785] Server  LOG      ✓ Compiled in 115ms
+[67:23:43.540] Server  LOG      ✓ Compiled in 137ms
+[67:24:10.975] Server  LOG      ✓ Compiled in 98ms
+[67:24:11.940] Browser ERROR   ./app/admin/blog/page.tsx:89:5
+Parsing ecmascript source code failed
+  87 |     featured: [],
+  88 |     post
+> 89 |     category: form.category,
+     |     ^^^^^^^^
+  90 |     post_author: "Admin",
+  91 |     author_image: "/placeholder.svg",
+  92 |     published_at: new Date().toISOString().split("T")[0],
+
+Unexpected token `category`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:24:15.932] Browser ERROR   ./app/admin/blog/page.tsx:89:5
+Parsing ecmascript source code failed
+  87 |     featured: [],
+  88 |     post_date
+> 89 |     category: form.category,
+     |     ^^^^^^^^
+  90 |     post_author: "Admin",
+  91 |     author_image: "/placeholder.svg",
+  92 |     published_at: new Date().toISOString().split("T")[0],
+
+Unexpected token `category`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:24:16.271] Server  LOG      ✓ Compiled in 131ms
+[67:24:16.946] Browser ERROR   ./app/admin/blog/page.tsx:89:13
+Parsing ecmascript source code failed
+  87 |     featured: [],
+  88 |     post_date: 
+> 89 |     category: form.category,
+     |             ^
+  90 |     post_author: "Admin",
+  91 |     author_image: "/placeholder.svg",
+  92 |     published_at: new Date().toISOString().split("T")[0],
+
+Expected ',', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:24:18.934] Browser ERROR   ./app/admin/blog/page.tsx:89:13
+Parsing ecmascript source code failed
+  87 |     featured: [],
+  88 |     post_date: 
+> 89 |     category: form.category,
+     |             ^
+  90 |     post_author: "Admin",
+  91 |     author_image: "/placeholder.svg",
+  92 |     published_at: new Date().toISOString().split("T")[0],
+
+Expected ',', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:24:30.534] Server  LOG      ✓ Compiled in 134ms
+[67:24:30.939] Browser ERROR   ./app/admin/blog/page.tsx:89:5
+Parsing ecmascript source code failed
+  87 |     featured: [],
+  88 |     post_date: new Date().toISOString().split("T")[0] 
+> 89 |     category: form.category,
+     |     ^^^^^^^^
+  90 |     post_author: "Admin",
+  91 |     author_image: "/placeholder.svg",
+  92 |     published_at: new Date().toISOString().split("T")[0],
+
+Expected ',', got 'category'
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:26:57.872] Server  LOG      ✓ Compiled in 118ms
+[67:26:58.949] Browser ERROR   ./app/admin/blog/page.tsx:90:5
+Parsing ecmascript source code failed
+  88 |     post_date: new Date().toISOString().split("T")[0],
+  89 |     post_status 
+> 90 |     category: form.category,
+     |     ^^^^^^^^
+  91 |     post_author: "Admin",
+  92 |     author_image: "/placeholder.svg",
+  93 |     published_at: new Date().toISOString().split("T")[0],
+
+Unexpected token `category`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:27:00.434] Server  LOG      ✓ Compiled in 139ms
+[67:27:00.940] Browser ERROR   ./app/admin/blog/page.tsx:90:13
+Parsing ecmascript source code failed
+  88 |     post_date: new Date().toISOString().split("T")[0],
+  89 |     post_status:  
+> 90 |     category: form.category,
+     |             ^
+  91 |     post_author: "Admin",
+  92 |     author_image: "/placeholder.svg",
+  93 |     published_at: new Date().toISOString().split("T")[0],
+
+Expected ',', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:27:05.529] Server  LOG      ✓ Compiled in 133ms
+[67:27:05.938] Browser ERROR   ./app/admin/blog/page.tsx:90:5
+Parsing ecmascript source code failed
+  88 |     post_date: new Date().toISOString().split("T")[0],
+  89 |     post_status: 'published' 
+> 90 |     category: form.category,
+     |     ^^^^^^^^
+  91 |     post_author: "Admin",
+  92 |     author_image: "/placeholder.svg",
+  93 |     published_at: new Date().toISOString().split("T")[0],
+
+Expected ',', got 'category'
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[67:27:25.001] Browser LOG     Sending: {"author_image":"/placeholder.svg","category":"Videography","featured":[],"featured_image":"Commodo dolor aperia","post_author":"Admin","post_content":"Quia optio cupidata","post_date":"2025-12-05","post_excerpt":"Libero incidunt ass","post_status":"published","post_title":"Reprehenderit conseq","post_type":"Post","published_at":"2025-12-05","read_time":"1 min read","slug":"Magna cupidatat sit"}
+[67:56:15.358] Browser LOG     Sending: {"author_image":"/placeholder.svg","category":"Videography","featured":[],"featured_image":"Commodo dolor aperia","post_author":"Admin","post_content":"Quia optio cupidata","post_date":"2025-12-05","post_excerpt":"Libero incidunt ass","post_status":"published","post_title":"Reprehenderit conseq","post_type":"Post","published_at":"2025-12-05","read_time":"1 min read","slug":"Magna cupidatat sit"}
+[67:56:15.358] Browser LOG     PHP Response: {"error":"Title and content required"}
+[67:56:15.358] Browser ERROR   Add failed: Title and content required
+[67:56:47.096] Server  LOG      ✓ Compiled in 141ms
+[67:56:51.443] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Videography","content":"Quia optio cupidata","excerpt":"Libero incidunt ass","featured_image":"Commodo dolor aperia","published_at":"2025-12-05","read_time":"1 min read","slug":"Magna cupidatat sit","title":"Reprehenderit conseq"}
+[68:03:15.418] Server  LOG      ✓ Compiled in 153ms
+[68:03:33.582] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Videography","content":"Quia optio cupidata","excerpt":"Libero incidunt ass","featured_image":"Commodo dolor aperia","published_at":"2025-12-05","read_time":"1 min read","slug":"Magna cupidatat sit","title":"Reprehenderit conseq"}
+[68:03:33.582] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[68:03:50.973] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Videography","content":"Quia optio cupidata","excerpt":"Libero incidunt ass","featured_image":"Commodo dolor aperia","published_at":"2025-12-05","read_time":"1 min read","slug":"Magna cupidatat sit","title":"Reprehenderit conseq"}
+[68:03:50.973] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
