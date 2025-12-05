@@ -74,35 +74,41 @@ export default function AdminBlog() {
   }
 
   // ADD POST
-  const handleAdd = async () => {
-    if (!form.title || !form.content) return
+const handleAdd = async () => {
+  if (!form.title || !form.content) return;
 
-    const newPost = {
-      ...form,
-      slug: form.slug || generateSlug(form.title),
-      author: "Admin",
-      author_image: "/placeholder.svg",
-      published_at: new Date().toISOString().split("T")[0],
-      read_time: `${Math.ceil(form.content.split(" ").length / 200)} min read`,
-    }
+  const newPost = {
+    title: form.title,
+    slug: form.slug || generateSlug(form.title),
+    excerpt: form.excerpt,
+    content: form.content,
+    featured_image: form.featured_image,
+    category: form.category,
+    author: "Admin",
+    author_image: "/placeholder.svg",
+    published_at: new Date().toISOString().split("T")[0],
+    read_time: `${Math.ceil(form.content.split(" ").length / 200)} min read`,
+  };
 
-    await fetch("http://localhost/photography-portfolio-backend/add-post.php", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newPost),
-    })
+  console.log("Sending:", newPost); // SEE DATA
 
-    setForm({
-      title: "",
-      slug: "",
-      excerpt: "",
-      content: "",
-      category: "",
-      featured_image: "",
-    })
-    setIsAddDialogOpen(false)
-    fetchPosts()
+  const res = await fetch("http://localhost/photography-portfolio-backend/add-post.php", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(newPost),
+  });
+
+  const result = await res.json();
+  console.log("PHP Response:", result); // SEE SUCCESS
+
+  if (result.success) {
+    setIsAddDialogOpen(false);
+    setForm({ title: "", slug: "", excerpt: "", content: "", category: "", featured_image: "" });
+    fetchPosts();
+  } else {
+    console.error("Add failed:", result.error);
   }
+};
 
   // EDIT POST
   const openEdit = (post: BlogPost) => {
@@ -127,7 +133,7 @@ export default function AdminBlog() {
       slug: form.slug || generateSlug(form.title),
     }
 
-    await fetch("http://localhost/photography-portfolio-backend/update-post.php", {
+    await fetch("http://localhost/photography-portfolio-backend/posts-update.php", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updated),
@@ -141,7 +147,7 @@ export default function AdminBlog() {
   const handleDelete = async (id: string) => {
     if (!confirm("Delete this post?")) return
 
-    await fetch(`http://localhost/photography-portfolio-backend/delete-post.php?id=${id}`, {
+    await fetch(`http://localhost/photography-portfolio-backend/posts-delete.php?id=${id}`, {
       method: "DELETE",
     })
     fetchPosts()

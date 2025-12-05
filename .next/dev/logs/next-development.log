@@ -4197,3 +4197,845 @@ Import traces:
   Client Component SSR:
     ./app/admin/blog/page.tsx [Client Component SSR]
     ./app/admin/blog/page.tsx [Server Component]
+[59:20:10.666] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[59:20:10.666] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[59:20:50.904] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[59:20:50.904] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[59:21:16.015] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[59:21:16.015] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[59:21:16.015] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764916446362}
+[59:22:09.575] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[59:22:09.575] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[59:23:19.322] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[59:23:19.322] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[59:27:46.676] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[59:27:52.896] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[59:31:21.510] Server  LOG      ✓ Compiled in 85ms
+[59:31:24.926] Server  LOG      ✓ Compiled in 88ms
+[59:31:29.219] Server  LOG      ✓ Compiled in 83ms
+[59:31:35.748] Server  LOG      ✓ Compiled in 78ms
+[59:31:39.193] Server  LOG      ✓ Compiled in 116ms
+[59:31:45.539] Server  LOG      ✓ Compiled in 77ms
+[59:31:47.308] Server  LOG      ✓ Compiled in 82ms
+[59:31:49.269] Server  LOG      ✓ Compiled in 74ms
+[59:31:52.236] Server  LOG      ✓ Compiled in 86ms
+[59:31:54.026] Server  LOG      ✓ Compiled in 102ms
+[59:32:07.777] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[59:32:14.194] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[59:32:14.660] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[59:32:14.660] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[59:32:14.660] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764917104961}
+[59:32:16.618] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[59:32:16.618] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[59:32:48.893] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[59:33:57.251] Server  LOG      ✓ Compiled in 96ms
+[59:34:03.546] Server  LOG      ✓ Compiled in 91ms
+[59:34:05.996] Server  LOG      ✓ Compiled in 93ms
+[59:34:44.554] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[59:34:44.745] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[59:34:44.745] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[59:34:44.745] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764917255045}
+[59:34:46.590] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[59:34:46.590] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[60:13:25.046] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[60:13:25.046] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[60:13:28.110] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[60:13:28.532] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[60:13:28.532] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[60:13:28.532] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764919578822}
+[60:13:30.508] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[60:13:30.508] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[60:14:54.381] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[60:14:54.381] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[60:15:59.661] Server  LOG      ✓ Compiled in 114ms
+[60:16:02.060] Server  LOG      ✓ Compiled in 126ms
+[60:16:03.674] Server  LOG      ✓ Compiled in 122ms
+[60:16:07.364] Server  LOG      ✓ Compiled in 192ms
+[60:16:07.939] Browser ERROR   ./app/admin/blog/page.tsx:94:20
+Parsing ecmascript source code failed
+  92 |       body: JSON.stringify(newPost),
+  93 |     })
+> 94 |     console.log(new);
+     |                    ^
+  95 |     
+  96 |
+  97 |     setForm({
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[60:16:10.135] Server  LOG      ✓ Compiled in 93ms
+[60:16:21.886] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[60:16:22.313] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[60:16:22.313] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[60:16:22.313] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764919752595}
+[60:16:24.023] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[60:16:24.024] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[60:16:34.510] Browser LOG     {"author":"Admin","author_image":"/placeholder.svg","category":"Venues","content":"Voluptatem aut elig","excerpt":"Cupiditate quia et q","featured_image":"Officia do sunt vol","published_at":"2025-12-05","read_time":"1 min read","slug":"Et cum accusamus vel","title":"Voluptatum corrupti"}
+[62:25:43.272] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[62:25:43.652] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[62:25:43.652] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[62:25:43.652] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764927513876}
+[62:25:45.029] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[62:25:45.029] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[62:25:52.608] Browser LOG     {"author":"Admin","author_image":"/placeholder.svg","category":"Venues","content":"Sint nobis id eum t","excerpt":"Quidem sed eveniet ","featured_image":"Officiis blanditiis ","published_at":"2025-12-05","read_time":"1 min read","slug":"Earum possimus maxi","title":"Impedit qui blandit"}
+[62:32:57.386] Server  LOG      ✓ Compiled in 115ms
+[62:33:15.181] Server  LOG      ✓ Compiled in 138ms
+[62:33:17.664] Server  LOG      ✓ Compiled in 89ms
+[62:33:26.882] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[62:33:27.317] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[62:33:27.317] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[62:33:27.318] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764927977596}
+[62:33:30.480] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[62:33:30.480] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[62:36:18.939] Browser ERROR   ./lib/blog-data.tsx:111:18
+Parsing ecmascript source code failed
+  109 | <h2>Candid Joy</h2>
+  110 | <p>The mehndi is often the most relaxed event, making it perfect for candid photography. The genuine smiles and laughter create some of the most treasured wedding photos.</p>`,
+> 111 |     featuredImage: "/placeholder.svg?key=j6yh7",
+      |                  ^
+  112 |     author: "Sara Ahmed",
+  113 |     authorImage: "/placeholder.svg?key=duwfb",
+  114 |     publishedAt: "2024-11-05",
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./lib/blog-data.tsx [Client Component Browser]
+    ./app/blog/page.tsx [Client Component Browser]
+    ./app/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/blog-data.tsx [Client Component SSR]
+    ./app/blog/page.tsx [Client Component SSR]
+    ./app/blog/page.tsx [Server Component]
+[62:36:37.854] Server  LOG      ✓ Compiled in 109ms
+[62:36:54.629] Browser ERROR   Add failed: {"status":"error","message":"Invalid data: 'post_title' and 'post_excerpt' are required"}
+[62:37:14.588] Browser ERROR   Add failed: {"status":"error","message":"Invalid data: 'post_title' and 'post_excerpt' are required"}
+[62:37:29.633] Server  LOG      ✓ Compiled in 111ms
+[62:37:33.392] Server  LOG      ✓ Compiled in 157ms
+[62:37:33.946] Browser ERROR   ./app/admin/blog/page.tsx:92:16
+Parsing ecmascript source code failed
+  90 |     read_time: `${Math.ceil(form.content.split(" ").length / 200)} min read`,
+  91 |   };
+> 92 | console.log(new);
+     |                ^
+  93 |
+  94 |   const res = await fetch("http://localhost/photography-portfolio-backend/posts-add.php", {
+  95 |     method: "POST",
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[62:37:39.975] Browser LOG     {"author":"Admin","author_image":"/placeholder.svg","category":"Ceremonies","content":"<p>The mehndi ceremony is one of the most colorful and joyful events in Pakistani wedding celebrations. Here's how to ensure these moments are captured beautifully.</p>\n\n<h2>Understanding the Ceremony</h2>\n<p>Mehndi ceremonies are vibrant, musical events filled with dancing, singing, and the application of henna. Understanding the flow of events helps photographers anticipate and capture key moments.</p>\n\n<h2>Color Coordination</h2>\n<p>The traditional yellows and greens of mehndi ceremonies create a stunning visual palette. Photographers should be prepared for these bright colors and know how to balance them in photos.</p>\n\n<h2>Capturing the Henna Application</h2>\n<p>The intricate henna designs being applied to the bride's hands are essential shots. Close-up macro photography showcases the artistry and detail of these temporary tattoos.</p>\n\n<h2>Dance and Music</h2>\n<p>Action shots of the dholki and dance performances require skill to capture movement and emotion. Burst mode and appropriate shutter speeds are essential.</p>\n\n<h2>Candid Joy</h2>\n<p>The mehndi is often the most relaxed event, making it perfect for candid photography. The genuine smiles and laughter create some of the most treasured wedding photos.</p>`,\n","excerpt":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside","featured_image":"https://i.pinimg.com/1200x/cc/ad/32/ccad32362b224d1351d2063ee1fa224d.jpg","published_at":"2025-12-05","read_time":"1 min read","slug":"this-couple-celebrated-their-hindu-catholic-wedding-ceremony-amidst-the-romantic-tuscan-countryside","title":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside"}
+[62:37:39.975] Browser ERROR   Add failed: {"status":"error","message":"Invalid data: 'post_title' and 'post_excerpt' are required"}
+[62:52:24.903] Server  LOG      ✓ Compiled in 151ms
+[62:52:33.906] Server  LOG      ✓ Compiled in 94ms
+[62:52:44.938] Browser ERROR   Add failed: {"status":"error","message":"Invalid data: 'post_title' and 'post_excerpt' are required"}
+[62:52:47.005] Browser ERROR   Add failed: {"status":"error","message":"Invalid data: 'post_title' and 'post_excerpt' are required"}
+[62:52:54.599] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[62:52:55.014] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[62:52:55.014] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[62:52:55.014] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764929145276}
+[62:52:56.369] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[62:52:56.369] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[62:53:41.040] Browser ERROR   Add failed: {"status":"error","message":"Invalid data: 'post_title' and 'post_excerpt' are required"}
+[62:54:32.842] Server  LOG      ✓ Compiled in 128ms
+[62:54:34.548] Server  LOG      ✓ Compiled in 99ms
+[62:54:35.893] Server  LOG      ✓ Compiled in 110ms
+[62:54:37.119] Server  LOG      ✓ Compiled in 98ms
+[62:54:38.840] Server  LOG      ✓ Compiled in 138ms
+[62:54:39.936] Browser ERROR   ./app/admin/blog/page.tsx:92:18
+Parsing ecmascript source code failed
+  90 |     read_time: `${Math.ceil(form.content.split(" ").length / 200)} min read`,
+  91 |   };
+> 92 |   console.log(new);
+     |                  ^
+  93 |   
+  94 |
+  95 |   const res = await fetch("http://localhost/photography-portfolio-backend/posts-add.php", {
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[62:54:54.576] Browser LOG     {"author":"Admin","author_image":"/placeholder.svg","category":"Ceremonies","content":"<p>The mehndi ceremony is one of the most colorful and joyful events in Pakistani wedding celebrations. Here's how to ensure these moments are captured beautifully.</p>\n\n<h2>Understanding the Ceremony</h2>\n<p>Mehndi ceremonies are vibrant, musical events filled with dancing, singing, and the application of henna. Understanding the flow of events helps photographers anticipate and capture key moments.</p>\n\n<h2>Color Coordination</h2>\n<p>The traditional yellows and greens of mehndi ceremonies create a stunning visual palette. Photographers should be prepared for these bright colors and know how to balance them in photos.</p>\n\n<h2>Capturing the Henna Application</h2>\n<p>The intricate henna designs being applied to the bride's hands are essential shots. Close-up macro photography showcases the artistry and detail of these temporary tattoos.</p>\n\n<h2>Dance and Music</h2>\n<p>Action shots of the dholki and dance performances require skill to capture movement and emotion. Burst mode and appropriate shutter speeds are essential.</p>\n\n<h2>Candid Joy</h2>\n<p>The mehndi is often the most relaxed event, making it perfect for candid photography. The genuine smiles and laughter create some of the most treasured wedding photos.</p>`,\n","excerpt":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside","featured_image":"https://i.pinimg.com/1200x/cc/ad/32/ccad32362b224d1351d2063ee1fa224d.jpg","published_at":"2025-12-05","read_time":"1 min read","slug":"this-couple-celebrated-their-hindu-catholic-wedding-ceremony-amidst-the-romantic-tuscan-countryside","title":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside"}
+[62:54:54.576] Browser ERROR   Add failed: {"status":"error","message":"Invalid data: 'post_title' and 'post_excerpt' are required"}
+[63:01:11.652] Browser LOG     {"author":"Admin","author_image":"/placeholder.svg","category":"Ceremonies","content":"<p>The mehndi ceremony is one of the most colorful and joyful events in Pakistani wedding celebrations. Here's how to ensure these moments are captured beautifully.</p>\n\n<h2>Understanding the Ceremony</h2>\n<p>Mehndi ceremonies are vibrant, musical events filled with dancing, singing, and the application of henna. Understanding the flow of events helps photographers anticipate and capture key moments.</p>\n\n<h2>Color Coordination</h2>\n<p>The traditional yellows and greens of mehndi ceremonies create a stunning visual palette. Photographers should be prepared for these bright colors and know how to balance them in photos.</p>\n\n<h2>Capturing the Henna Application</h2>\n<p>The intricate henna designs being applied to the bride's hands are essential shots. Close-up macro photography showcases the artistry and detail of these temporary tattoos.</p>\n\n<h2>Dance and Music</h2>\n<p>Action shots of the dholki and dance performances require skill to capture movement and emotion. Burst mode and appropriate shutter speeds are essential.</p>\n\n<h2>Candid Joy</h2>\n<p>The mehndi is often the most relaxed event, making it perfect for candid photography. The genuine smiles and laughter create some of the most treasured wedding photos.</p>`,\n","excerpt":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside","featured_image":"https://i.pinimg.com/1200x/cc/ad/32/ccad32362b224d1351d2063ee1fa224d.jpg","published_at":"2025-12-05","read_time":"1 min read","slug":"this-couple-celebrated-their-hindu-catholic-wedding-ceremony-amidst-the-romantic-tuscan-countryside","title":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside"}
+[63:01:11.652] Browser ERROR   Add failed: {"status":"error","message":"Invalid data: 'post_title' and 'post_excerpt' are required"}
+[63:01:14.166] Browser LOG     {"author":"Admin","author_image":"/placeholder.svg","category":"Ceremonies","content":"<p>The mehndi ceremony is one of the most colorful and joyful events in Pakistani wedding celebrations. Here's how to ensure these moments are captured beautifully.</p>\n\n<h2>Understanding the Ceremony</h2>\n<p>Mehndi ceremonies are vibrant, musical events filled with dancing, singing, and the application of henna. Understanding the flow of events helps photographers anticipate and capture key moments.</p>\n\n<h2>Color Coordination</h2>\n<p>The traditional yellows and greens of mehndi ceremonies create a stunning visual palette. Photographers should be prepared for these bright colors and know how to balance them in photos.</p>\n\n<h2>Capturing the Henna Application</h2>\n<p>The intricate henna designs being applied to the bride's hands are essential shots. Close-up macro photography showcases the artistry and detail of these temporary tattoos.</p>\n\n<h2>Dance and Music</h2>\n<p>Action shots of the dholki and dance performances require skill to capture movement and emotion. Burst mode and appropriate shutter speeds are essential.</p>\n\n<h2>Candid Joy</h2>\n<p>The mehndi is often the most relaxed event, making it perfect for candid photography. The genuine smiles and laughter create some of the most treasured wedding photos.</p>`,\n","excerpt":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside","featured_image":"https://i.pinimg.com/1200x/cc/ad/32/ccad32362b224d1351d2063ee1fa224d.jpg","published_at":"2025-12-05","read_time":"1 min read","slug":"this-couple-celebrated-their-hindu-catholic-wedding-ceremony-amidst-the-romantic-tuscan-countryside","title":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside"}
+[63:01:14.166] Browser ERROR   Add failed: {"status":"error","message":"Invalid data: 'post_title' and 'post_excerpt' are required"}
+[63:01:15.764] Browser LOG     {"author":"Admin","author_image":"/placeholder.svg","category":"Ceremonies","content":"<p>The mehndi ceremony is one of the most colorful and joyful events in Pakistani wedding celebrations. Here's how to ensure these moments are captured beautifully.</p>\n\n<h2>Understanding the Ceremony</h2>\n<p>Mehndi ceremonies are vibrant, musical events filled with dancing, singing, and the application of henna. Understanding the flow of events helps photographers anticipate and capture key moments.</p>\n\n<h2>Color Coordination</h2>\n<p>The traditional yellows and greens of mehndi ceremonies create a stunning visual palette. Photographers should be prepared for these bright colors and know how to balance them in photos.</p>\n\n<h2>Capturing the Henna Application</h2>\n<p>The intricate henna designs being applied to the bride's hands are essential shots. Close-up macro photography showcases the artistry and detail of these temporary tattoos.</p>\n\n<h2>Dance and Music</h2>\n<p>Action shots of the dholki and dance performances require skill to capture movement and emotion. Burst mode and appropriate shutter speeds are essential.</p>\n\n<h2>Candid Joy</h2>\n<p>The mehndi is often the most relaxed event, making it perfect for candid photography. The genuine smiles and laughter create some of the most treasured wedding photos.</p>`,\n","excerpt":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside","featured_image":"https://i.pinimg.com/1200x/cc/ad/32/ccad32362b224d1351d2063ee1fa224d.jpg","published_at":"2025-12-05","read_time":"1 min read","slug":"this-couple-celebrated-their-hindu-catholic-wedding-ceremony-amidst-the-romantic-tuscan-countryside","title":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside"}
+[63:01:15.764] Browser ERROR   Add failed: {"status":"error","message":"Invalid data: 'post_title' and 'post_excerpt' are required"}
+[63:01:16.845] Browser LOG     {"author":"Admin","author_image":"/placeholder.svg","category":"Ceremonies","content":"<p>The mehndi ceremony is one of the most colorful and joyful events in Pakistani wedding celebrations. Here's how to ensure these moments are captured beautifully.</p>\n\n<h2>Understanding the Ceremony</h2>\n<p>Mehndi ceremonies are vibrant, musical events filled with dancing, singing, and the application of henna. Understanding the flow of events helps photographers anticipate and capture key moments.</p>\n\n<h2>Color Coordination</h2>\n<p>The traditional yellows and greens of mehndi ceremonies create a stunning visual palette. Photographers should be prepared for these bright colors and know how to balance them in photos.</p>\n\n<h2>Capturing the Henna Application</h2>\n<p>The intricate henna designs being applied to the bride's hands are essential shots. Close-up macro photography showcases the artistry and detail of these temporary tattoos.</p>\n\n<h2>Dance and Music</h2>\n<p>Action shots of the dholki and dance performances require skill to capture movement and emotion. Burst mode and appropriate shutter speeds are essential.</p>\n\n<h2>Candid Joy</h2>\n<p>The mehndi is often the most relaxed event, making it perfect for candid photography. The genuine smiles and laughter create some of the most treasured wedding photos.</p>`,\n","excerpt":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside","featured_image":"https://i.pinimg.com/1200x/cc/ad/32/ccad32362b224d1351d2063ee1fa224d.jpg","published_at":"2025-12-05","read_time":"1 min read","slug":"this-couple-celebrated-their-hindu-catholic-wedding-ceremony-amidst-the-romantic-tuscan-countryside","title":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside"}
+[63:01:16.845] Browser ERROR   Add failed: {"status":"error","message":"Invalid data: 'post_title' and 'post_excerpt' are required"}
+[63:01:17.881] Browser LOG     {"author":"Admin","author_image":"/placeholder.svg","category":"Ceremonies","content":"<p>The mehndi ceremony is one of the most colorful and joyful events in Pakistani wedding celebrations. Here's how to ensure these moments are captured beautifully.</p>\n\n<h2>Understanding the Ceremony</h2>\n<p>Mehndi ceremonies are vibrant, musical events filled with dancing, singing, and the application of henna. Understanding the flow of events helps photographers anticipate and capture key moments.</p>\n\n<h2>Color Coordination</h2>\n<p>The traditional yellows and greens of mehndi ceremonies create a stunning visual palette. Photographers should be prepared for these bright colors and know how to balance them in photos.</p>\n\n<h2>Capturing the Henna Application</h2>\n<p>The intricate henna designs being applied to the bride's hands are essential shots. Close-up macro photography showcases the artistry and detail of these temporary tattoos.</p>\n\n<h2>Dance and Music</h2>\n<p>Action shots of the dholki and dance performances require skill to capture movement and emotion. Burst mode and appropriate shutter speeds are essential.</p>\n\n<h2>Candid Joy</h2>\n<p>The mehndi is often the most relaxed event, making it perfect for candid photography. The genuine smiles and laughter create some of the most treasured wedding photos.</p>`,\n","excerpt":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside","featured_image":"https://i.pinimg.com/1200x/cc/ad/32/ccad32362b224d1351d2063ee1fa224d.jpg","published_at":"2025-12-05","read_time":"1 min read","slug":"this-couple-celebrated-their-hindu-catholic-wedding-ceremony-amidst-the-romantic-tuscan-countryside","title":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside"}
+[63:01:17.881] Browser ERROR   Add failed: {"status":"error","message":"Invalid data: 'post_title' and 'post_excerpt' are required"}
+[63:01:35.679] Browser LOG     {"author":"Admin","author_image":"/placeholder.svg","category":"Ceremonies","content":"<p>The mehndi ceremony is one of the most colorful and joyful events in Pakistani wedding celebrations. Here's how to ensure these moments are captured beautifully.</p>\n\n<h2>Understanding the Ceremony</h2>\n<p>Mehndi ceremonies are vibrant, musical events filled with dancing, singing, and the application of henna. Understanding the flow of events helps photographers anticipate and capture key moments.</p>\n\n<h2>Color Coordination</h2>\n<p>The traditional yellows and greens of mehndi ceremonies create a stunning visual palette. Photographers should be prepared for these bright colors and know how to balance them in photos.</p>\n\n<h2>Capturing the Henna Application</h2>\n<p>The intricate henna designs being applied to the bride's hands are essential shots. Close-up macro photography showcases the artistry and detail of these temporary tattoos.</p>\n\n<h2>Dance and Music</h2>\n<p>Action shots of the dholki and dance performances require skill to capture movement and emotion. Burst mode and appropriate shutter speeds are essential.</p>\n\n<h2>Candid Joy</h2>\n<p>The mehndi is often the most relaxed event, making it perfect for candid photography. The genuine smiles and laughter create some of the most treasured wedding photos.</p>`,\n","excerpt":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside","featured_image":"https://i.pinimg.com/1200x/cc/ad/32/ccad32362b224d1351d2063ee1fa224d.jpg","published_at":"2025-12-05","read_time":"1 min read","slug":"this-couple-celebrated-their-hindu-catholic-wedding-ceremony-amidst-the-romantic-tuscan-countryside","title":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside"}
+[63:01:35.679] Browser ERROR   Add failed: {"status":"error","message":"Invalid data: 'post_title' and 'post_excerpt' are required"}
+[63:01:44.277] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[63:01:44.607] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[63:01:44.607] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[63:01:44.607] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764929674806}
+[63:02:28.475] Server  LOG      ✓ Compiled in 107ms
+[63:02:28.940] Browser ERROR   ./app/admin/blog/page.tsx:78:28
+Parsing ecmascript source code failed
+  76 |   // ADD POST
+  77 | const handleAdd = async () => {
+> 78 |   if (!form.title || form !form.content) return;
+     |                            ^^^^
+  79 |
+  80 |   const newPost = {
+  81 |     title: form.title,
+
+Expected ')', got 'form'
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[63:02:29.718] Server  LOG      ✓ Compiled in 112ms
+[63:02:29.938] Browser ERROR   ./app/admin/blog/page.tsx:78:28
+Parsing ecmascript source code failed
+  76 |   // ADD POST
+  77 | const handleAdd = async () => {
+> 78 |   if (!form.title || form. !form.content) return;
+     |                            ^
+  79 |
+  80 |   const newPost = {
+  81 |     title: form.title,
+
+Expected ident
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[63:02:32.640] Server  LOG      ✓ Compiled in 145ms
+[63:02:32.947] Browser ERROR   ./app/admin/blog/page.tsx:78:37
+Parsing ecmascript source code failed
+  76 |   // ADD POST
+  77 | const handleAdd = async () => {
+> 78 |   if (!form.title || form.excerpt  !form.content) return;
+     |                                     ^^^^
+  79 |
+  80 |   const newPost = {
+  81 |     title: form.title,
+
+Expected ')', got 'form'
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+[63:02:37.327] Server  LOG      ✓ Compiled in 109ms
+[63:02:46.051] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[63:02:46.051] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[63:03:16.010] Browser LOG     {"author":"Admin","author_image":"/placeholder.svg","category":"Ceremonies","content":"<p>The mehndi ceremony is one of the most colorful and joyful events in Pakistani wedding celebrations. Here's how to ensure these moments are captured beautifully.</p>\n\n<h2>Understanding the Ceremony</h2>\n<p>Mehndi ceremonies are vibrant, musical events filled with dancing, singing, and the application of henna. Understanding the flow of events helps photographers anticipate and capture key moments.</p>\n\n<h2>Color Coordination</h2>\n<p>The traditional yellows and greens of mehndi ceremonies create a stunning visual palette. Photographers should be prepared for these bright colors and know how to balance them in photos.</p>\n\n<h2>Capturing the Henna Application</h2>\n<p>The intricate henna designs being applied to the bride's hands are essential shots. Close-up macro photography showcases the artistry and detail of these temporary tattoos.</p>\n\n<h2>Dance and Music</h2>\n<p>Action shots of the dholki and dance performances require skill to capture movement and emotion. Burst mode and appropriate shutter speeds are essential.</p>\n\n<h2>Candid Joy</h2>\n<p>The mehndi is often the most relaxed event, making it perfect for candid photography. The genuine smiles and laughter create some of the most treasured wedding photos.</p>`,\n","excerpt":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside","featured_image":"https://i.pinimg.com/1200x/cc/ad/32/ccad32362b224d1351d2063ee1fa224d.jpg","published_at":"2025-12-05","read_time":"1 min read","slug":"this-couple-celebrated-their-hindu-catholic-wedding-ceremony-amidst-the-romantic-tuscan-countryside","title":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside"}
+[63:03:16.011] Browser ERROR   Add failed: {"status":"error","message":"Invalid data: 'post_title' and 'post_excerpt' are required"}
+[63:07:19.966] Server  LOG      ✓ Compiled in 116ms
+[63:08:12.991] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Ceremonies","content":"<p>The mehndi ceremony is one of the most colorful and joyful events in Pakistani wedding celebrations. Here's how to ensure these moments are captured beautifully.</p>\n\n<h2>Understanding the Ceremony</h2>\n<p>Mehndi ceremonies are vibrant, musical events filled with dancing, singing, and the application of henna. Understanding the flow of events helps photographers anticipate and capture key moments.</p>\n\n<h2>Color Coordination</h2>\n<p>The traditional yellows and greens of mehndi ceremonies create a stunning visual palette. Photographers should be prepared for these bright colors and know how to balance them in photos.</p>\n\n<h2>Capturing the Henna Application</h2>\n<p>The intricate henna designs being applied to the bride's hands are essential shots. Close-up macro photography showcases the artistry and detail of these temporary tattoos.</p>\n\n<h2>Dance and Music</h2>\n<p>Action shots of the dholki and dance performances require skill to capture movement and emotion. Burst mode and appropriate shutter speeds are essential.</p>\n\n<h2>Candid Joy</h2>\n<p>The mehndi is often the most relaxed event, making it perfect for candid photography. The genuine smiles and laughter create some of the most treasured wedding photos.</p>`,\n","excerpt":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside","featured_image":"https://i.pinimg.com/1200x/cc/ad/32/ccad32362b224d1351d2063ee1fa224d.jpg","published_at":"2025-12-05","read_time":"1 min read","slug":"this-couple-celebrated-their-hindu-catholic-wedding-ceremony-amidst-the-romantic-tuscan-countryside","title":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside"}
+[63:08:12.991] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:08:43.746] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Ceremonies","content":"<p>The mehndi ceremony is one of the most colorful and joyful events in Pakistani wedding celebrations. Here's how to ensure these moments are captured beautifully.</p>\n\n<h2>Understanding the Ceremony</h2>\n<p>Mehndi ceremonies are vibrant, musical events filled with dancing, singing, and the application of henna. Understanding the flow of events helps photographers anticipate and capture key moments.</p>\n\n<h2>Color Coordination</h2>\n<p>The traditional yellows and greens of mehndi ceremonies create a stunning visual palette. Photographers should be prepared for these bright colors and know how to balance them in photos.</p>\n\n<h2>Capturing the Henna Application</h2>\n<p>The intricate henna designs being applied to the bride's hands are essential shots. Close-up macro photography showcases the artistry and detail of these temporary tattoos.</p>\n\n<h2>Dance and Music</h2>\n<p>Action shots of the dholki and dance performances require skill to capture movement and emotion. Burst mode and appropriate shutter speeds are essential.</p>\n\n<h2>Candid Joy</h2>\n<p>The mehndi is often the most relaxed event, making it perfect for candid photography. The genuine smiles and laughter create some of the most treasured wedding photos.</p>`,\n","excerpt":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside","featured_image":"https://i.pinimg.com/1200x/cc/ad/32/ccad32362b224d1351d2063ee1fa224d.jpg","published_at":"2025-12-05","read_time":"1 min read","slug":"this-couple-celebrated-their-hindu-catholic-wedding-ceremony-amidst-the-romantic-tuscan-countryside","title":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside"}
+[63:08:43.746] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:09:31.230] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Ceremonies","content":"<p>The mehndi ceremony is one of the most colorful and joyful events in Pakistani wedding celebrations. Here's how to ensure these moments are captured beautifully.</p>\n\n<h2>Understanding the Ceremony</h2>\n<p>Mehndi ceremonies are vibrant, musical events filled with dancing, singing, and the application of henna. Understanding the flow of events helps photographers anticipate and capture key moments.</p>\n\n<h2>Color Coordination</h2>\n<p>The traditional yellows and greens of mehndi ceremonies create a stunning visual palette. Photographers should be prepared for these bright colors and know how to balance them in photos.</p>\n\n<h2>Capturing the Henna Application</h2>\n<p>The intricate henna designs being applied to the bride's hands are essential shots. Close-up macro photography showcases the artistry and detail of these temporary tattoos.</p>\n\n<h2>Dance and Music</h2>\n<p>Action shots of the dholki and dance performances require skill to capture movement and emotion. Burst mode and appropriate shutter speeds are essential.</p>\n\n<h2>Candid Joy</h2>\n<p>The mehndi is often the most relaxed event, making it perfect for candid photography. The genuine smiles and laughter create some of the most treasured wedding photos.</p>`,\n","excerpt":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside","featured_image":"https://i.pinimg.com/1200x/cc/ad/32/ccad32362b224d1351d2063ee1fa224d.jpg","published_at":"2025-12-05","read_time":"1 min read","slug":"this-couple-celebrated-their-hindu-catholic-wedding-ceremony-amidst-the-romantic-tuscan-countryside","title":"This couple celebrated their Hindu-Catholic wedding ceremony amidst the romantic Tuscan countryside"}
+[63:09:31.230] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:09:36.679] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[63:09:37.106] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[63:09:37.106] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[63:09:37.106] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764930147374}
+[63:09:38.641] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[63:09:38.641] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[63:09:51.393] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Venues","content":"Adipisicing et dolor","excerpt":"Vero hic obcaecati d","featured_image":"Maiores ipsam culpa ","published_at":"2025-12-05","read_time":"1 min read","slug":"Nihil et facilis quo","title":"Qui in ullam harum s"}
+[63:09:51.393] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:11:57.116] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Venues","content":"Adipisicing et dolor","excerpt":"Vero hic obcaecati d","featured_image":"Maiores ipsam culpa ","published_at":"2025-12-05","read_time":"1 min read","slug":"Nihil et facilis quo","title":"Qui in ullam harum s"}
+[63:11:57.116] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:17:07.226] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Venues","content":"Adipisicing et dolor","excerpt":"Vero hic obcaecati d","featured_image":"Maiores ipsam culpa ","published_at":"2025-12-05","read_time":"1 min read","slug":"Nihil et facilis quo","title":"Qui in ullam harum s"}
+[63:17:07.226] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:25:06.182] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Venues","content":"Adipisicing et dolor","excerpt":"Vero hic obcaecati d","featured_image":"Maiores ipsam culpa ","published_at":"2025-12-05","read_time":"1 min read","slug":"Nihil et facilis quo","title":"Qui in ullam harum s"}
+[63:25:06.182] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:25:10.679] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[63:25:11.155] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[63:25:11.155] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[63:25:11.155] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764931081414}
+[63:25:12.680] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[63:25:12.680] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[63:25:29.546] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Technology","content":"Repellendus Itaque ","excerpt":"Sunt doloribus vel ","featured_image":"Vitae quae dolorem q","published_at":"2025-12-05","read_time":"1 min read","slug":"Dolore aliquid accus","title":"Tempore ducimus il"}
+[63:25:29.546] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:26:09.758] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Technology","content":"Repellendus Itaque ","excerpt":"Sunt doloribus vel ","featured_image":"Vitae quae dolorem q","published_at":"2025-12-05","read_time":"1 min read","slug":"Dolore aliquid accus","title":"Tempore ducimus il"}
+[63:26:09.758] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:32:27.226] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Technology","content":"Repellendus Itaque ","excerpt":"Sunt doloribus vel ","featured_image":"Vitae quae dolorem q","published_at":"2025-12-05","read_time":"1 min read","slug":"Dolore aliquid accus","title":"Tempore ducimus il"}
+[63:32:27.226] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:33:11.057] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[63:33:11.470] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[63:33:11.470] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[63:33:11.470] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764931561744}
+[63:33:12.766] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[63:33:12.766] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[63:33:16.674] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"","content":"Facilis sunt a in si","excerpt":"Molestiae culpa ut ","featured_image":"Numquam et sint dolo","published_at":"2025-12-05","read_time":"1 min read","slug":"Rerum incididunt in ","title":"Dolor et consequuntu"}
+[63:33:16.674] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:33:21.164] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Venues","content":"Facilis sunt a in si","excerpt":"Molestiae culpa ut ","featured_image":"Numquam et sint dolo","published_at":"2025-12-05","read_time":"1 min read","slug":"Rerum incididunt in ","title":"Dolor et consequuntu"}
+[63:33:21.164] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:34:25.248] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Venues","content":"Facilis sunt a in si","excerpt":"Molestiae culpa ut ","featured_image":"Numquam et sint dolo","published_at":"2025-12-05","read_time":"1 min read","slug":"Rerum incididunt in ","title":"Dolor et consequuntu"}
+[63:34:25.248] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:34:29.134] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[63:34:29.659] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[63:34:29.659] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[63:34:29.659] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764931639913}
+[63:34:32.038] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[63:34:32.038] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[63:34:41.405] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Technology","content":"Sint facere reprehe","excerpt":"Blanditiis impedit ","featured_image":"Velit veniam aut in","published_at":"2025-12-05","read_time":"1 min read","slug":"Dolores totam vel eo","title":"Aut exercitationem s"}
+[63:34:41.405] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:53:49.663] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Technology","content":"Sint facere reprehe","excerpt":"Blanditiis impedit ","featured_image":"Velit veniam aut in","published_at":"2025-12-05","read_time":"1 min read","slug":"Dolores totam vel eo","title":"Aut exercitationem s"}
+[63:53:49.663] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:56:19.433] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Technology","content":"Sint facere reprehe","excerpt":"Blanditiis impedit ","featured_image":"Velit veniam aut in","published_at":"2025-12-05","read_time":"1 min read","slug":"Dolores totam vel eo","title":"Aut exercitationem s"}
+[63:56:19.433] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:56:56.114] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Technology","content":"Sint facere reprehe","excerpt":"Blanditiis impedit ","featured_image":"Velit veniam aut in","published_at":"2025-12-05","read_time":"1 min read","slug":"Dolores totam vel eo","title":"Aut exercitationem s"}
+[63:56:56.114] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:56:58.444] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Technology","content":"Sint facere reprehe","excerpt":"Blanditiis impedit ","featured_image":"Velit veniam aut in","published_at":"2025-12-05","read_time":"1 min read","slug":"Dolores totam vel eo","title":"Aut exercitationem s"}
+[63:56:58.444] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[63:57:29.263] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[63:57:29.443] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[63:57:29.443] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[63:57:29.443] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764933019722}
+[63:59:46.466] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[63:59:46.466] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[63:59:55.477] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Videography","content":"Velit sint cumque v","excerpt":"Quo sint et eum quo ","featured_image":"Sint excepteur sit ","published_at":"2025-12-05","read_time":"1 min read","slug":"Quo dolor incididunt","title":"Fugiat error vel pro"}
+[63:59:55.477] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[64:03:10.177] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Videography","content":"Velit sint cumque v","excerpt":"Quo sint et eum quo ","featured_image":"Sint excepteur sit ","published_at":"2025-12-05","read_time":"1 min read","slug":"Quo dolor incididunt","title":"Fugiat error vel pro"}
+[64:03:10.177] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[64:03:19.064] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Videography","content":"Velit sint cumque v","excerpt":"Quo sint et eum quo ","featured_image":"Sint excepteur sit ","published_at":"2025-12-05","read_time":"1 min read","slug":"Quo dolor incididunt","title":"Fugiat error vel pro"}
+[64:03:19.064] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[64:18:32.311] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Videography","content":"Velit sint cumque v","excerpt":"Quo sint et eum quo ","featured_image":"Sint excepteur sit ","published_at":"2025-12-05","read_time":"1 min read","slug":"Quo dolor incididunt","title":"Fugiat error vel pro"}
+[64:18:32.311] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[64:22:08.324] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/blog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="playfair_display_dc3b86c2-module__wRxeBG__variable inter_5901b7c6-module__ec5Qu..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[64:22:08.790] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[64:22:08.790] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin/blog","route":"/admin/blog"}
+[64:22:08.790] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/blog color: rgb(120, 120, 120) color: inherit {"dp":"/admin/blog","o":"http://localhost:3000/admin/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764934498898}
+[64:22:12.556] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[64:22:12.556] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[64:22:29.534] Browser LOG     Sending: {"author":"Admin","author_image":"/placeholder.svg","category":"Technology","content":"Ipsam sunt eiusmod d","excerpt":"Facilis velit aliqu","featured_image":"Officia tempore eve","published_at":"2025-12-05","read_time":"1 min read","slug":"In error molestias q","title":"Dolor fugiat volupt"}
+[64:22:29.534] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
