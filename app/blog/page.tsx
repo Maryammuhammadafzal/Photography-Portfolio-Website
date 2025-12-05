@@ -1,10 +1,10 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { blogPosts } from "@/lib/blog-data"
+import { getAllPosts } from "@/lib/blog-data"
 import { motion } from "framer-motion"
 import { Calendar, Clock, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -13,12 +13,44 @@ const POSTS_PER_PAGE = 4
 
 export default function BlogPage() {
   const [currentPage, setCurrentPage] = useState(1)
+  const [paginatedPosts, setPaginatedPosts] = useState<any[]>([])
+  const [totalPages, setTotalPages] = useState(1)
+  const [loading, setLoading] = useState(true)
 
-  const totalPages = Math.ceil(blogPosts.length / POSTS_PER_PAGE)
-  const startIndex = (currentPage - 1) * POSTS_PER_PAGE
-  const paginatedPosts = blogPosts.slice(startIndex, startIndex + POSTS_PER_PAGE)
-  const featuredPost = currentPage === 1 ? blogPosts[0] : null
-  const regularPosts = currentPage === 1 ? paginatedPosts.slice(1) : paginatedPosts
+  useEffect(() => {
+    const fetchPosts = async () => {
+      setLoading(true)
+      try {
+        const { data, posts, totalPages: pages } = await getAllPosts(currentPage)
+        // console.log(data);
+        
+        setPaginatedPosts(data)
+        setTotalPages(data)
+        console.log("Posts loaded:", data) // ← SEE DATA HERE
+      } catch (error) {
+        console.error("Failed to load posts:", error)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchPosts()
+  }, [currentPage])
+
+  const featuredPost = currentPage === 1 && paginatedPosts?.length > 0 ? paginatedPosts[0] : null
+  const regularPosts = currentPage === 1 ? paginatedPosts?.slice(1) : paginatedPosts
+
+  if (loading) {
+    return (
+      <main className="min-h-screen bg-background">
+        <Navbar />
+        <div className="pt-32 pb-16 text-center">
+          <p className="text-muted-foreground">Loading posts...</p>
+        </div>
+        <Footer />
+      </main>
+    )
+  }
 
   return (
     <main className="min-h-screen bg-background">
@@ -47,7 +79,7 @@ export default function BlogPage() {
                   <div className="grid grid-cols-1 lg:grid-cols-2">
                     <div className="aspect-[16/10] lg:aspect-auto overflow-hidden">
                       <img
-                        src={featuredPost.featuredImage || "/placeholder.svg"}
+                        src={featuredPost.featured_image || "/placeholder.svg"}
                         alt={featuredPost.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
@@ -62,7 +94,7 @@ export default function BlogPage() {
                       <p className="text-muted-foreground mt-4 line-clamp-3">{featuredPost.excerpt}</p>
                       <div className="flex items-center gap-4 mt-6">
                         <img
-                          src={featuredPost.authorImage || "/placeholder.svg"}
+                          src={featuredPost.author_image || "/placeholder.svg"}
                           alt={featuredPost.author}
                           className="w-10 h-10 rounded-full object-cover"
                         />
@@ -71,7 +103,7 @@ export default function BlogPage() {
                           <div className="flex items-center gap-3 text-muted-foreground">
                             <span className="flex items-center gap-1">
                               <Calendar className="h-4 w-4" />
-                              {new Date(featuredPost.publishedAt).toLocaleDateString("en-US", {
+                              {new Date(featuredPost.published_at).toLocaleDateString("en-US", {
                                 month: "short",
                                 day: "numeric",
                                 year: "numeric",
@@ -79,7 +111,7 @@ export default function BlogPage() {
                             </span>
                             <span className="flex items-center gap-1">
                               <Clock className="h-4 w-4" />
-                              {featuredPost.readTime}
+                              {featuredPost.read_time}
                             </span>
                           </div>
                         </div>
@@ -103,7 +135,7 @@ export default function BlogPage() {
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {regularPosts.map((post, index) => (
+            {regularPosts?.map((post: any, index: number) => (
               <motion.div
                 key={post.id}
                 initial={{ opacity: 0, y: 20 }}
@@ -114,7 +146,7 @@ export default function BlogPage() {
                   <article className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-colors h-full flex flex-col">
                     <div className="aspect-[16/10] overflow-hidden">
                       <img
-                        src={post.featuredImage || "/placeholder.svg"}
+                        src={post.featured_image || "/placeholder.svg"}
                         alt={post.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
@@ -127,13 +159,13 @@ export default function BlogPage() {
                       <p className="text-muted-foreground text-sm mt-2 line-clamp-2 flex-grow">{post.excerpt}</p>
                       <div className="flex items-center gap-3 mt-4 pt-4 border-t border-border">
                         <img
-                          src={post.authorImage || "/placeholder.svg"}
+                          src={post.author_image || "/placeholder.svg"}
                           alt={post.author}
                           className="w-8 h-8 rounded-full object-cover"
                         />
                         <div className="text-xs">
                           <p className="font-medium text-foreground">{post.author}</p>
-                          <p className="text-muted-foreground">{post.readTime}</p>
+                          <p className="text-muted-foreground">{post.read_time}</p>
                         </div>
                       </div>
                     </div>

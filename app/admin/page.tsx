@@ -3,44 +3,67 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Calendar, ImageIcon, FileText, MessageSquare } from "lucide-react"
 import { sampleBookings, sampleSupportTickets } from "@/lib/admin-data"
-import { blogPosts } from "@/lib/blog-data"
+import { getAllPosts } from "@/lib/blog-data"
 import { portfolioItems } from "@/lib/portfolio-data"
+import { useEffect, useState } from "react"
 
-const stats = [
-  {
-    label: "Total Bookings",
-    value: sampleBookings.length.toString(),
-    icon: Calendar,
-    change: "+12%",
-    changeType: "positive" as const,
-  },
-  {
-    label: "Portfolio Items",
-    value: portfolioItems.length.toString(),
-    icon: ImageIcon,
-    change: "+8",
-    changeType: "positive" as const,
-  },
-  {
-    label: "Blog Posts",
-    value: blogPosts.length.toString(),
-    icon: FileText,
-    change: "+2",
-    changeType: "positive" as const,
-  },
-  {
-    label: "Open Tickets",
-    value: sampleSupportTickets.filter((t) => t.status === "open").length.toString(),
-    icon: MessageSquare,
-    change: "-3",
-    changeType: "negative" as const,
-  },
-]
+
 
 export default function AdminDashboard() {
+  const [blogPosts , setBlogPosts] = useState(null)
+  const [loading , setLoading] = useState(false)
   const pendingBookings = sampleBookings.filter((b) => b.status === "pending")
   const confirmedBookings = sampleBookings.filter((b) => b.status === "confirmed")
 
+  useEffect(() => {
+    const fetchPosts = async () => {
+      setLoading(true)
+      try {
+        const { data } = await getAllPosts()
+        // console.log(data);
+
+        setBlogPosts(data)
+        console.log("Posts loaded:", data) // ← SEE DATA HERE
+      } catch (error) {
+        console.error("Failed to load posts:", error)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchPosts()
+  }, [])
+
+  const stats = [
+    {
+      label: "Total Bookings",
+      value: sampleBookings.length.toString(),
+      icon: Calendar,
+      change: "+12%",
+      changeType: "positive" as const,
+    },
+    {
+      label: "Portfolio Items",
+      value: portfolioItems.length.toString(),
+      icon: ImageIcon,
+      change: "+8",
+      changeType: "positive" as const,
+    },
+    {
+      label: "Blog Posts",
+      value: blogPosts?.length.toString(),
+      icon: FileText,
+      change: "+2",
+      changeType: "positive" as const,
+    },
+    {
+      label: "Open Tickets",
+      value: sampleSupportTickets.filter((t) => t.status === "open").length.toString(),
+      icon: MessageSquare,
+      change: "-3",
+      changeType: "negative" as const,
+    },
+  ]
   return (
     <div className="space-y-8">
       <div>
@@ -94,13 +117,12 @@ export default function AdminDashboard() {
                   </div>
                   <div className="text-right">
                     <span
-                      className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${
-                        booking.status === "confirmed"
+                      className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${booking.status === "confirmed"
                           ? "bg-green-100 text-green-700"
                           : booking.status === "pending"
                             ? "bg-yellow-100 text-yellow-700"
                             : "bg-blue-100 text-blue-700"
-                      }`}
+                        }`}
                     >
                       {booking.status.charAt(0).toUpperCase() + booking.status.slice(1)}
                     </span>
@@ -132,9 +154,8 @@ export default function AdminDashboard() {
                     <p className="text-sm text-muted-foreground line-clamp-1 mt-2">{ticket.message}</p>
                   </div>
                   <span
-                    className={`inline-block px-3 py-1 rounded-full text-xs font-medium ml-4 ${
-                      ticket.status === "open" ? "bg-yellow-100 text-yellow-700" : "bg-green-100 text-green-700"
-                    }`}
+                    className={`inline-block px-3 py-1 rounded-full text-xs font-medium ml-4 ${ticket.status === "open" ? "bg-yellow-100 text-yellow-700" : "bg-green-100 text-green-700"
+                      }`}
                   >
                     {ticket.status.charAt(0).toUpperCase() + ticket.status.slice(1)}
                   </span>

@@ -1,1 +1,6 @@
-{}
+{
+  "/admin/blog/page": "app/admin/blog/page.js",
+  "/admin/bookings/page": "app/admin/bookings/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/blog/page": "app/blog/page.js"
+}
