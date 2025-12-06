@@ -51,7 +51,7 @@ export default function AdminDashboard() {
     },
     {
       label: "Blog Posts",
-      value: blogPosts?.length.toString(),
+      value: blogPosts?.length?.toString(),
       icon: FileText,
       change: "+2",
       changeType: "positive" as const,

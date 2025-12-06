@@ -143,6 +143,7 @@ console.log(updated);
     const result = await res.json()
     if (result.success) {
       setIsEditDialogOpen(false)
+      window.location.reload();
       fetchPosts()
     } else {
       console.error("Update failed:", result.error)
