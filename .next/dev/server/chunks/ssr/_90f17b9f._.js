@@ -808,9 +808,9 @@ function BlogPage() {
             try {
                 const { data, posts, totalPages: pages } = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$blog$2d$data$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getAllPosts"])(currentPage);
                 // console.log(data);
-                setPaginatedPosts(data);
-                setTotalPages(data);
-                console.log("Posts loaded:", data); // ← SEE DATA HERE
+                setPaginatedPosts(posts);
+                setTotalPages(posts);
+                console.log("Posts loaded:", posts); // ← SEE DATA HERE
             } catch (error) {
                 console.error("Failed to load posts:", error);
             } finally{
@@ -1154,7 +1154,7 @@ function BlogPage() {
                                         delay: index * 0.1
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                        href: `/blog/${post.slug}`,
+                                        href: `/blog/${encodeURIComponent(post.slug)}`,
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
                                             className: "group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-colors h-full flex flex-col",
                                             children: [
@@ -1259,7 +1259,7 @@ function BlogPage() {
                                     }, void 0, false, {
                                         fileName: "[project]/app/blog/page.tsx",
                                         lineNumber: 145,
-                                        columnNumber: 17
+                                        columnNumber: 16
                                     }, this)
                                 }, post.id, false, {
                                     fileName: "[project]/app/blog/page.tsx",

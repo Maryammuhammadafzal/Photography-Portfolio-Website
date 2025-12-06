@@ -24,9 +24,9 @@ export default function BlogPage() {
         const { data, posts, totalPages: pages } = await getAllPosts(currentPage)
         // console.log(data);
         
-        setPaginatedPosts(data)
-        setTotalPages(data)
-        console.log("Posts loaded:", data) // ← SEE DATA HERE
+        setPaginatedPosts(posts)
+        setTotalPages(posts)
+        console.log("Posts loaded:", posts) // ← SEE DATA HERE
       } catch (error) {
         console.error("Failed to load posts:", error)
       } finally {
@@ -142,7 +142,7 @@ export default function BlogPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link href={`/blog/${post.slug}`}>
+               <Link href={`/blog/${encodeURIComponent(post.slug)}`}>
                   <article className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-colors h-full flex flex-col">
                     <div className="aspect-[16/10] overflow-hidden">
                       <img

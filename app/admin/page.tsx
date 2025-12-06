@@ -19,11 +19,11 @@ export default function AdminDashboard() {
     const fetchPosts = async () => {
       setLoading(true)
       try {
-        const { data } = await getAllPosts()
+        const { data , posts } = await getAllPosts()
         // console.log(data);
 
-        setBlogPosts(data)
-        console.log("Posts loaded:", data) // ← SEE DATA HERE
+        setBlogPosts(posts)
+        console.log("Posts loaded:", posts) // ← SEE DATA HERE
       } catch (error) {
         console.error("Failed to load posts:", error)
       } finally {

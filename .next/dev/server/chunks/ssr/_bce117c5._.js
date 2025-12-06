@@ -747,10 +747,10 @@ function AdminDashboard() {
         const fetchPosts = async ()=>{
             setLoading(true);
             try {
-                const { data } = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$blog$2d$data$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getAllPosts"])();
+                const { data, posts } = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$blog$2d$data$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getAllPosts"])();
                 // console.log(data);
-                setBlogPosts(data);
-                console.log("Posts loaded:", data); // ← SEE DATA HERE
+                setBlogPosts(posts);
+                console.log("Posts loaded:", posts); // ← SEE DATA HERE
             } catch (error) {
                 console.error("Failed to load posts:", error);
             } finally{

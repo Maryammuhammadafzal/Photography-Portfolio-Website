@@ -48,7 +48,7 @@ export default function AdminBlog() {
     try {
       const res = await fetch(`http://localhost/photography-portfolio-backend/posts.php`)
       const data = await res.json()
-      setPosts(data || [])
+      setPosts(data.posts || [])
     } catch (error) {
       console.error("Failed to load posts:", error)
     } finally {
@@ -74,41 +74,37 @@ export default function AdminBlog() {
   }
 
   // ADD POST
-const handleAdd = async () => {
-  if (!form.title || !form.content) return;
+  const handleAdd = async () => {
+    if (!form.title || !form.content) return
 
-  const newPost = {
-    title: form.title,
-    slug: form.slug || generateSlug(form.title),
-    excerpt: form.excerpt,
-    content: form.content,
-    featured_image: form.featured_image,
-    category: form.category,
-    author: "Admin",
-    author_image: "/placeholder.svg",
-    published_at: new Date().toISOString().split("T")[0],
-    read_time: `${Math.ceil(form.content.split(" ").length / 200)} min read`,
-  };
+    const newPost = {
+      title: form.title,
+      slug: form.slug || generateSlug(form.title),
+      excerpt: form.excerpt,
+      content: form.content,
+      featured_image: form.featured_image,
+      category: form.category,
+      author: "Admin",
+      author_image: "/placeholder.svg",
+      published_at: new Date().toISOString().split("T")[0],
+      read_time: `${Math.ceil(form.content.split(" ").length / 200)} min read`,
+    }
 
-  console.log("Sending:", newPost);
+    const res = await fetch("http://localhost/photography-portfolio-backend/add-post.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newPost),
+    })
 
-  const res = await fetch("http://localhost/photography-portfolio-backend/add-post.php", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(newPost),
-  });
-
-  const result = await res.json();
-  console.log("PHP Response:", result);
-
-  if (result.success) {
-    setIsAddDialogOpen(false);
-    setForm({ title: "", slug: "", excerpt: "", content: "", category: "", featured_image: "" });
-    fetchPosts();
-  } else {
-    console.error("Add failed:", result.error);
+    const result = await res.json()
+    if (result.success) {
+      setIsAddDialogOpen(false)
+      setForm({ title: "", slug: "", excerpt: "", content: "", category: "", featured_image: "" })
+      fetchPosts()
+    } else {
+      console.error("Add failed:", result.error)
+    }
   }
-};
 
   // EDIT POST
   const openEdit = (post: BlogPost) => {
@@ -129,28 +125,44 @@ const handleAdd = async () => {
 
     const updated = {
       id: editingPost.id,
-      ...form,
+      title: form.title,
       slug: form.slug || generateSlug(form.title),
+      excerpt: form.excerpt,
+      content: form.content,
+      featured_image: form.featured_image,
+      category: form.category,
     }
+console.log(updated);
 
-    await fetch("http://localhost/photography-portfolio-backend/posts-update.php", {
+    const res = await fetch("http://localhost/photography-portfolio-backend/posts-update.php", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updated),
     })
 
-    setIsEditDialogOpen(false)
-    fetchPosts()
+    const result = await res.json()
+    if (result.success) {
+      setIsEditDialogOpen(false)
+      fetchPosts()
+    } else {
+      console.error("Update failed:", result.error)
+    }
   }
 
   // DELETE POST
   const handleDelete = async (id: string) => {
     if (!confirm("Delete this post?")) return
 
-    await fetch(`http://localhost/photography-portfolio-backend/posts-delete.php?id=${id}`, {
+    const res = await fetch(`http://localhost/photography-portfolio-backend/delete-post.php?id=${id}`, {
       method: "DELETE",
     })
-    fetchPosts()
+
+    const result = await res.json()
+    if (result.success) {
+      fetchPosts()
+    } else {
+      console.error("Delete failed:", result.error)
+    }
   }
 
   if (loading) {
@@ -165,6 +177,7 @@ const handleAdd = async () => {
           <p className="text-muted-foreground mt-1">Create and manage blog content</p>
         </div>
 
+        {/* ADD DIALOG */}
         <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
           <DialogTrigger asChild>
             <Button className="bg-primary hover:bg-primary/90">
@@ -253,17 +266,17 @@ const handleAdd = async () => {
           </DialogContent>
         </Dialog>
 
-        {/* Edit Dialog */}
+        {/* EDIT DIALOG */}
         <Dialog open={isEditDialogOpen} onOpenChange={setIsEditDialogOpen}>
           <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
             <DialogHeader>
               <DialogTitle>Edit Blog Post</DialogTitle>
             </DialogHeader>
             <div className="space-y-4 pt-4">
-              {/* Same form as Add, but pre-filled */}
               <div className="space-y-2">
                 <Label>Title *</Label>
                 <Input
+                  placeholder="Enter post title"
                   value={form.title}
                   onChange={(e) => {
                     setForm({
@@ -274,8 +287,62 @@ const handleAdd = async () => {
                   }}
                 />
               </div>
-              {/* ... repeat all fields ... */}
-              <Button onClick={handleUpdate} className="w-full">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label>URL Slug</Label>
+                  <Input
+                    placeholder="post-url-slug"
+                    value={form.slug}
+                    onChange={(e) => setForm({ ...form, slug: e.target.value })}
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label>Category</Label>
+                  <Select
+                    value={form.category}
+                    onValueChange={(v) => setForm({ ...form, category: v })}
+                  >
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select category" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="Photography Tips">Photography Tips</SelectItem>
+                      <SelectItem value="Venues">Venues</SelectItem>
+                      <SelectItem value="Ceremonies">Ceremonies</SelectItem>
+                      <SelectItem value="Technology">Technology</SelectItem>
+                      <SelectItem value="Videography">Videography</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <Label>Featured Image URL</Label>
+                <Input
+                  placeholder="https://..."
+                  value={form.featured_image}
+                  onChange={(e) => setForm({ ...form, featured_image: e.target.value })}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label>Excerpt *</Label>
+                <Textarea
+                  placeholder="Brief description..."
+                  value={form.excerpt}
+                  onChange={(e) => setForm({ ...form, excerpt: e.target.value })}
+                  rows={2}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label>Content * (HTML supported)</Label>
+                <Textarea
+                  placeholder="Write your post..."
+                  value={form.content}
+                  onChange={(e) => setForm({ ...form, content: e.target.value })}
+                  rows={10}
+                  className="font-mono text-sm"
+                />
+              </div>
+              <Button onClick={handleUpdate} className="w-full" disabled={!form.title || !form.content}>
                 Update Post
               </Button>
             </div>
@@ -327,7 +394,7 @@ const handleAdd = async () => {
                   </div>
                   <div className="flex items-center gap-2 ml-4">
                     <Button variant="ghost" size="icon" asChild>
-                      <a href={`/blog/${post.slug}`} target="_blank" rel="noopener">
+                      <a href={`/blog/${encodeURIComponent(post.slug)}`} target="_blank" rel="noopener">
                         <Eye className="h-4 w-4" />
                       </a>
                     </Button>
@@ -363,7 +430,6 @@ const handleAdd = async () => {
     </div>
   )
 }
-
 
 // "use client"
 
